@@ -1,0 +1,32 @@
+{
+  "name": "jasminetest",
+  "version": "0.0.0",
+  "description": "A repository for testing Jasmine and Karma with AngularJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start karma.conf.js"
+  },
+  "keywords": [
+    "jasmine",
+    "testing",
+    "karma",
+    "angularjs"
+  ],
+  "author": "Santiago Fulladoza",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "jasmine-core": "~2.5.0",
+    "karma": "~1.2.0",
+    "karma-jasmine": "~1.0.2",
+    "grunt": "1.0.1",
+    "grunt-karma": "~2.0.0",
+    "grunt-cli": "~1.2.0",
+    "grunt-contrib-uglify": "~2.0.0",
+    "grunt-contrib-jshint": "~1.0.0",
+    "jshint-stylish": "~2.2.1",
+    "grunt-contrib-connect": "~1.0.2",
+    "serve-static": "~1.11.1",
+    "karma-chrome-launcher": "~2.0.0",
+    "karma-firefox-launcher": "~1.0.0"
+  }
+}

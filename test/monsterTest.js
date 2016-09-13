@@ -21,8 +21,6 @@ describe('httpmocking', function(){
         var monster = monsters[params.id - 1];
         return [200, monster];
       });
-      // 200,{'id':1,'name':'Monstruin','race':'Gruffling','size':'medium'});
-    // $httpBackend.whenGET('http://monster_repository/monster/2').respond(200,{'id':2,'name':'Ferocin','race':'Gruffling','size':'large'});
 
     $httpBackend.whenRoute('PUT','http://monster_repository/monster/changename/')
     .respond(

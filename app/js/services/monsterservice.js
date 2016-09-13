@@ -37,12 +37,7 @@ angular.module('jasminetest').service('monsterSvc', ['$q', '$http', function($q,
         'method': 'PUT',
         'url': 'http://monster_repository/monster/changename/'+ id,
         'data': {'name': name}
-      })
-      .then(
-        function(){
-          return name;
-        }
-      );
+      });
     },
     getname: function(id){
       return genericRequest({
@@ -63,9 +58,12 @@ angular.module('jasminetest').service('monsterSvc', ['$q', '$http', function($q,
         'url': 'http://monster_repository/monster/race/'+ id,
       });
     },
-    // evolve: function(){
-    //
-    // }
+    evolve: function(id){
+      return genericRequest({
+        'method': 'PUT',
+        'url': 'http://monster_repository/monster/evolve/'+ id,
+      });
+    }
   };
 
   return methods;
